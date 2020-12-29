@@ -1,0 +1,3 @@
+Hello, I have created and written to a file
+This is my second line
+And this is my last line
