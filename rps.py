@@ -20,7 +20,6 @@ while player:
             print("You lose!",computer,"cut",player)
         else:
             print("You win!",player,"covers",computer)
-
     elif player=="Scissors":
         if computer=="Rock":
             print("You lose...",computer,"smashes",player)
@@ -31,7 +30,7 @@ while player:
         player = False
         break
     else:
-        print("That's not a valid play.Check your spelling!")
+        print("That's not a valid play. Check your spelling!")
 
     player = True
     computer=t[randint(0,2)]
