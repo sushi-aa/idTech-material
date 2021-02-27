@@ -49,13 +49,12 @@ class Food:
 
 class Snake:
     def __init__(self):
-        self.headposition = [SIZE, 0]  # keeps track of where it needs to go next
-        self.body = [Square(-SIZE, 0), Square(0, 0), Square(SIZE, 0)]  # body is a list of squares
+        self.headposition = [SIZE, 0]
+        self.body = [Square(-SIZE, 0), Square(0, 0), Square(SIZE, 0)]
         self.nextX = 1  # tells the snake which way it's going next
         self.nextY = 0
-        self.crashed = False  # I'll use this when I get around to collision detection
+        self.crashed = False
         self.nextposition = [self.headposition[0] + SIZE * self.nextX, self.headposition[1] + SIZE * self.nextY]
-        # prepares the next location to add to the snake
 
     def moveup(self):  # pretty obvious what these do
         self.nextX, self.nextY = 0, 1
