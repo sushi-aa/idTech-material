@@ -2,7 +2,8 @@
 
 #replaces all instances of "default" with "default:" for correct verilog syntax
 
-rFile = open("dummy_verilog.py", "r")
+fileToOpen = input("file name please: ")
+rFile = open(fileToOpen, "r")
 lineList = []
 replaceList = []
 
@@ -16,7 +17,7 @@ for i in lineList:
     else:
         replaceList.append(i)
 
-wFile = open("dummy_verilog.py", "w")
+wFile = open(fileToOpen, "w")
 for i in replaceList:
     wFile.write(i+"\n")
 wFile.close()
